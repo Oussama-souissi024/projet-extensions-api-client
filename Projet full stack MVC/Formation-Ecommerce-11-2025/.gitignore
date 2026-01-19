@@ -1,0 +1,48 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# JetBrains Rider
+.idea/
+*.DotSettings.user
+
+# Logs
+*.log
+logs/
+Log/
+Logs/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ASP.NET static assets (restored/generated)
+wwwroot/lib/
+wwwroot/dist/
+
+# Publish
+.publish/
+*.pubxml
+*.pubxml.user
+
+# Environment files
+.env
+.env.*

@@ -1,0 +1,35 @@
+﻿@using Formation_Ecommerce_11_2025.Models.Category
+@model CreateCategoryViewModel
+<form asp-action="CreateCategory">
+    <div class="container border p-3">
+        <h1 class="text-white text-center">Create Category</h1>
+
+        <hr />
+        <div class="row">
+            <div class="col-2">
+                <label class="control-label pt-2" style="font-size:20px;">Name</label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label class="control-label pt-2" style="font-size:20px;">Description</label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="col-5 offset-2">
+                <a asp-action="CategoryIndex" class="btn-primary btn form-control ">Back to List</a>
+            </div>
+            <div class="col-5">
+                <input type="submit" value="Create Category" class="btn btn-success form-control" />
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
